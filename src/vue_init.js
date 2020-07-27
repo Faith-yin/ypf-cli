@@ -10,9 +10,9 @@ import initConfig from '@/config/initConfig'
 let initArr = [initConfig]
 
 let install = _ => {
-    // 注册配置文件
-    initArr.forEach(el => {
-        Vue.use(el)
-    })
+  // 注册配置文件
+  initArr.forEach(el => {
+    Vue.use(el)
+  })
 }
 export default install

@@ -6,10 +6,12 @@
 import axios from 'axios'
 import { Message } from 'element-ui'
 
+
 let path = {
     // 本地
     // development: `http://localhost:3000/`,
 }
+
 
 const ENV = process.env.NODE_ENV
 export default class InitAxios {
