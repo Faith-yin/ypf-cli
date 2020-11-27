@@ -1,17 +1,14 @@
 /*
- * @author: 殷鹏飞
- * @Date: 2019-12-26 08:52:22
- * @information: 自定义指令扫描
+ * @Date: 2020-01-11 12:53:49
+ * @information:自定义指令扫描
  */
 export default class ScanDirectives {
     constructor() {
         // 扫描组件文件夹，约定放组件的文件夹名称是directives
         this.directives = require.context('@/directives', true, /\.js$/)
     }
-    /*
-    * @author: 殷鹏飞
-    * @Date: 2019-12-26 08:52:22
-    * @information: 注册指令
+   /**
+    * 注册指令
     */
     init() {
         // 判断环境

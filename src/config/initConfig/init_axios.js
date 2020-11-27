@@ -1,7 +1,6 @@
 /*
- * @author: 殷鹏飞
- * @Date: 2019-12-26 08:51:44
- * @information: axios配置
+ * @Date: 2020-01-11 12:53:49
+ * @information:axios
  */
 import axios from 'axios'
 import { Message } from 'element-ui'
@@ -21,18 +20,14 @@ export default class InitAxios {
         // 成功响应状态码
         this.successCode = [1000, 200]
     }
-    /*
-    * @author: 殷鹏飞
-    * @Date: 2019-12-26 08:51:44
-    * @information: 请求拦截
+   /**
+    * 请求拦截
     */
     requestFun(request) {
         return request
     }
-    /*
-    * @author: 殷鹏飞
-    * @Date: 2019-12-26 08:51:44
-    * @information: 响应拦截
+   /**
+    * 响应拦截
     */
     responseFun(response) {
         let { data } = response
@@ -41,30 +36,24 @@ export default class InitAxios {
         if (isSuccess) {
             return Promise.resolve(data)
         }
-        Message.error(message || '返回状态码错误')
+        Message.error(message || '返回错误')
         return Promise.reject(data)
     }
-    /*
-    * @author: 殷鹏飞
-    * @Date: 2019-12-26 08:51:44
-    * @information: 检验状态码
+   /**
+    * 检验状态码
     */
     verifyCode(statusCode) {
         return this.successCode.includes(statusCode)
     }
-    /*
-    * @author: 殷鹏飞
-    * @Date: 2019-12-26 08:51:44
-    * @information: 请求失败回调
+   /**
+    * 失败回调
     */
     errorFun() {
-        Message.error('数据库连接失败')
+        Message.error('网络连接异常')
         return Promise.reject()
     }
-    /*
-    * @author: 殷鹏飞
-    * @Date: 2019-12-26 08:51:44
-    * @information: 初始化axios
+   /**
+    * 初始化axios
     */
     init() {
         let { requestFun, responseFun, errorFun } = this

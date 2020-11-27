@@ -1,7 +1,6 @@
 <!--
- * @author: 殷鹏飞
- * @Date: 2019-12-25 18:29:31
- * @information: APP
+ * @Date: 2020-01-07 12:43:52
+ * @information:APP
 -->
 <template>
   <div id="app">

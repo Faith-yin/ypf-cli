@@ -1,7 +1,6 @@
 /*
- * @Author: 殷鹏飞
- * @Date: 2020-03-23 15:21:06
- * @Description: 初始化router 和 store
+ * @Date: 2020-07-27 17:06:39
+ * @information:初始化router 和 store
  */
 
 // 引入配置文件

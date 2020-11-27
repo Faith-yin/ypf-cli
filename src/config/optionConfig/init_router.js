@@ -1,7 +1,6 @@
 /*
- * @Author: 殷鹏飞
- * @Date: 2020-03-23 15:03:06
- * @Description: 路由配置
+ * @Date: 2020-07-27 17:06:39
+ * @information:路由配置
  */
 
 import Vue from 'vue'
@@ -20,10 +19,8 @@ export default class InitRouter {
     this.name = 'router'
   }
   /**
-   * @Author: 殷鹏飞
-   * @Date: 2020-03-23 15:10:38
-   * @Description: 注册路由
-   */  
+   * 注册路由
+   */
   init() {
     let {routerOption} = this
     Vue.use(Router)

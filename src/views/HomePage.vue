@@ -1,34 +1,30 @@
 <!--
- * @author: 殷鹏飞
- * @Date: 2019-12-25 18:46:44
- * @information: 主页面路由
+ * @Date: 2020-01-11 12:53:49
+ * @information: homepage
 -->
 <template>
     <div id="home-page">
-        home-page -- {{platformState.name}}
+        home-page
     </div>
 </template>
 
 <script>
-import {initMounted, publicClass}  from '@/mixins'
-import publicInfo from '@/relyClass/public_info.js'
+import {publicClass}  from '@/mixins'
 import {mapState} from 'vuex'
 
 export default {
-    mixins: [initMounted, publicInfo, publicClass],
+    mixins: [publicClass],
     data() {
         return {}
     },
     computed: {
-      ...mapState('platform', [
-        'platformState',//平台state
-        'obj', //详情对象
+      ...mapState('public', [
+        'username', //详情对象
       ])
     },
     methods: {},
     mounted() {
-      // store 赋值
-      this.SET_PAGE_CONFIG({name: 'Jerry'})
+
     },
 }
 </script>

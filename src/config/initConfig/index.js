@@ -1,7 +1,6 @@
 /*
- * @author: 殷鹏飞
- * @Date: 2019-12-26 08:48:50
- * @information: 扫描配置
+ * @Date: 2020-01-11 12:53:49
+ * @information:扫描配置
  */
 // 引入组件扫描
 import componentsScan from './scan_components'

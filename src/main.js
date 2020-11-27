@@ -1,10 +1,7 @@
 /*
- * @author: 殷鹏飞
- * @Date: 2019-12-25 18:29:31
- * @information: 全局配置
+ * @Date: 2020-01-07 12:43:52
+ * @information:main
  */
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
 import vueInit from '@/vue_init.js'
@@ -18,7 +15,7 @@ Vue.config.productionTip = false
 Vue.use(ElementUi)
 Vue.use(vueInit)
 
-/* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   ...vueOptions,

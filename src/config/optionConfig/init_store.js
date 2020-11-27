@@ -1,7 +1,6 @@
 /*
- * @Author: 殷鹏飞
- * @Date: 2020-03-23 15:03:21
- * @Description: store配置
+ * @Date: 2020-07-27 17:06:39
+ * @information:store配置
  */
 
 import Vue from 'vue'
@@ -19,9 +18,7 @@ export default class InitStore {
     this.storeContext = require.context('@/store',true,/\.js$/)
   }
   /**
-   * @Author: 殷鹏飞
-   * @Date: 2020-03-23 15:15:08
-   * @Description: 注册store
+   * 注册store
    */
   init() {
     let {storeContext} = this

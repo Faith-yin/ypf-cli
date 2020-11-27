@@ -1,14 +1,11 @@
 /*
- * @Author: 殷鹏飞
- * @Date: 2020-03-23 16:18:49
- * @Description: 导出
+ * @Date: 2020-07-27 17:06:39
+ * @information:导出
  */
-import initMounted  from '@/mixins/init_mounted.js'
 import publicClass from '@/mixins/public_class.js'
 
 export {
-  initMounted,
   publicClass,
 }
 
-export default [initMounted, publicClass]
+export default [publicClass]

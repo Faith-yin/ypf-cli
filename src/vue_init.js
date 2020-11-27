@@ -1,7 +1,6 @@
 /*
- * @author: 殷鹏飞
- * @Date: 2019-12-26 09:34:22
- * @information: 初始化配置
+ * @Date: 2020-01-07 12:43:52
+ * @information:初始化配置
  */
 import Vue from 'vue'
 // 引入扫描配置

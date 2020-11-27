@@ -1,16 +1,13 @@
 /*
- * @author: 殷鹏飞
- * @Date: 2019-12-26 14:27:52
- * @information: 公共方法
+ * @Date: 2020-01-11 12:53:49
+ * @information:公共方法
  */
 import { Message } from 'element-ui'
 
 export default {
     methods: {
         /**
-         * @author: 殷鹏飞
-         * @Date: 2019-12-26 14:17:53
-         * @information: 请求方法
+         * 请求方法
          */
         methodQuery(model) {
             // loading名称，消息提示，promise或方法名称，方法参数，回调
@@ -30,9 +27,7 @@ export default {
             })
         },
         /**
-         * @author: 殷鹏飞
-         * @Date: 2019-12-26 14:17:53
-         * @information: 路由跳转
+         * 路由跳转
          */
         routeGo(model) {
             this.$router.push({
@@ -40,9 +35,7 @@ export default {
             })
         },
         /**
-         * @author: 殷鹏飞
-         * @Date: 2019-12-26 14:17:53
-         * @information: 表单检验
+         * 表单检验
          */
         formRequired(model) {
             let { arr, msg } = model
